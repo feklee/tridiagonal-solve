@@ -5,12 +5,12 @@ This package provides a solver for a system of linear equations. It is an
 implementation of the [tridiagonal matrix algorithm][1], also known as *Thomas
 algorithm*.
 
-Input:
+System, by example of `n = 4` unknowns `x`:
 
     b[0] * x[0] + c[0] * x[1]                             = d[0]
     a[0] * x[0] + b[1] * x[1] + c[1] * x[2]               = d[1]
                   a[1] * x[1] + b[2] * x[2] + c[2] * x[3] = d[2]
-                                a[2] * x[1] + b[3] * x[2] = d[3]
+                                a[2] * x[2] + b[3] * x[3] = d[3]
 
 In matrix notation:
 
