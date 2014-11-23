@@ -14,7 +14,7 @@ Input:
 
 In matrix notation:
 
-    ![Rendering in matrix notation][1]
+![Rendering in matrix notation][1]
 
 For the algorithm to definitely find a solution, the tridiagonal matrix needs
 to be *diagonally dominant:*
@@ -37,7 +37,7 @@ Examples
 
   * Three unknowns:
 
-        ![Rendering in matrix notation][3]
+    ![Rendering in matrix notation][3]
 
     Input:
 
@@ -49,7 +49,7 @@ Examples
   * Matrix is *not* diagonally dominant, and algorithm fails although solution
     exists:
 
-        ![Rendering in matrix notation][4]
+    ![Rendering in matrix notation][4]
 
     Snippet: `solve([0], [1, 0], [1], [1, 0]), null)`
 
@@ -57,7 +57,7 @@ Examples
 
   * Solution found although matrix is *not* diagonally dominant:
 
-        ![Rendering in matrix notation][5]
+    ![Rendering in matrix notation][5]
 
     Snippet: `solve([1], [1, 0], [1], [1, 0]), null)`
 
