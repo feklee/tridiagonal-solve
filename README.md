@@ -43,7 +43,7 @@ Examples
 
     Input:
 
-        var solve = require('./node_main.js');
+        var solve = require('tridiagonal-solve');
         return solve([4, 3], [1, 5, 8], [9, 7], [5, 6, 2]);
 
     Result: `[0.784387, 0.468401, 0.0743494]`
