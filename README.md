@@ -51,7 +51,7 @@ Examples
 
     ![Rendering in matrix notation][4]
 
-    Snippet: `solve([0], [1, 0], [1], [1, 0]), null)`
+    Snippet: `solve([0], [1, 0], [1], [1, 0])`
 
     Result: `null`
 
@@ -59,7 +59,7 @@ Examples
 
     ![Rendering in matrix notation][5]
 
-    Snippet: `solve([1], [1, 0], [1], [1, 0]), null)`
+    Snippet: `solve([1], [1, 0], [1], [1, 0])`
 
     Result: `[0, 1]`
 

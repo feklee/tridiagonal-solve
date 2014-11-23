@@ -1,6 +1,6 @@
 {
     "name": "tridiagonal-solve",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "author": "Felix E. Klee <felix.klee@inka.de>",
     "homepage": "https://github.com/feklee/tridiagonal-solve",
     "description": "Solver for tridiagonal systems of equations",
