@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/feklee/tridiagonal-solve.svg?branch=master)](https://travis-ci.org/feklee/tridiagonal-solve)
+
 Introduction
 ============
 
@@ -16,8 +18,8 @@ In matrix notation:
 
 ![Rendering in matrix notation][1]
 
-For the algorithm to definitely find a solution, the tridiagonal matrix needs
-to be *diagonally dominant:*
+The algorithm is only guaranteed to find a solution if the tridiagonal matrix
+is *diagonally dominant:*
 
     |b[0]|   > |c[0]|
     |b[1]|   > |a[0] + c[1]|
@@ -25,8 +27,8 @@ to be *diagonally dominant:*
     …
     |b[n-1]| > |a[n-2]|
 
-If that condition is not met, then it may happen that the algorithm cannot find
-a solution even if one exists.
+In other words: If that condition is *not* met, then it may happen that the
+algorithm cannot find a solution even if one exists.
 
 In case no solution is found, the result is `null`. For bad input, the result
 is undefined.
@@ -62,6 +64,27 @@ Examples
     Snippet: `solve([1], [1, 0], [1], [1, 0])`
 
     Result: `[0, 1]`
+
+
+Coding conventions
+==================
+
+  * Code needs to validate with JSLint.
+
+  * Comments are in Markdown.
+
+  * Avoid constructors (JS is classless), don’t throw exceptions (not necessary
+    in JS).
+
+  * Versioning: major.minor.bug-fix
+
+    Incompatible changes to the API mandate an update of the major version.
+
+    Keep version up to date in:
+
+      + Git tags
+
+      + `package.json`
 
 
 License
