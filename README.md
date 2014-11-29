@@ -22,8 +22,8 @@ The algorithm is only guaranteed to find a solution if the tridiagonal matrix
 is *diagonally dominant:*
 
     |b[0]|   > |c[0]|
-    |b[1]|   > |a[0] + c[1]|
-    |b[2]|   > |a[1] + c[2]|
+    |b[1]|   > |a[0]| + |c[1]|
+    |b[2]|   > |a[1]| + |c[2]|
     …
     |b[n-1]| > |a[n-2]|
 
@@ -44,9 +44,9 @@ Examples
     Input:
 
         var solve = require('tridiagonal-solve');
-        return solve([4, 3], [1, 5, 8], [9, 7], [5, 6, 2]);
+        return solve([4, 3], [9, -7, 8], [1, 2], [5, 6, 2]);
 
-    Result: `[0.784387, 0.468401, 0.0743494]`
+    Result: `[0.6, -0.4, 0.4]`
 
   * Matrix is *not* diagonally dominant, and algorithm fails although solution
     exists:
